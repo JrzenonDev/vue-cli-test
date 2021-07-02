@@ -14,6 +14,10 @@ const store = new Vuex.Store({
   getters: {
     counter: state => state.counter,
   },
+  actions: {
+    decrement: ({ commit }) => commit('decrement'),
+    increment: ({ commit }) => commit('increment'),
+  },
 });
 
 export { store };
